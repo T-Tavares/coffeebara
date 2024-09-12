@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .page {
     background-color: #222;
     width: 100dvw;
@@ -7,11 +9,35 @@
     align-items: center;
     gap: 1rem;
     padding: 2rem 0;
+    background: radial-gradient(circle at 50% 45%, #74cef4, #1688b1, #046385, #01445c);
+
+    h1 {
+        font-family: $font-handwriting;
+        font-size: 3rem;
+        color: #fff;
+        padding: 10px 30px;
+        border: 2px solid #fff;
+        border-color: #fff transparent;
+    }
+    p {
+        color: #fff;
+    }
+
+    .infoBallon {
+        position: absolute;
+        bottom: 20%;
+        background-color: #fff;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border-radius: 20px;
+        border-top-right-radius: 0;
+        p {
+            color: #000;
+        }
+    }
 }
 .modelContainer {
-    height: 100vw;
+    height: 70%;
     width: 100%;
-
-    background: radial-gradient(#74cef4, #1688b1, #046385, #01445c);
-    border-radius: 1rem;
+    // border: 1px solid #fff;
 }

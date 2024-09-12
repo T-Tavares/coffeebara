@@ -11,13 +11,15 @@ export function Coffeebara(props) {
     return (
         <group {...props} dispose={null}>
             <mesh geometry={nodes.building.geometry} material={materials.building} position={[-3.213, 2.391, -2.322]} />
-            <mesh
-                geometry={nodes.capy.geometry}
-                material={materials.capy}
-                position={[2.554, 5.404, -1.905]}
-                rotation={[Math.PI / 2, 0, Math.PI / 4]}
-                scale={1.325}
-            />
+            <Select enabled={true}>
+                <mesh
+                    geometry={nodes.capy.geometry}
+                    material={materials.capy}
+                    position={[2.554, 5.404, -1.905]}
+                    rotation={[Math.PI / 2, 0, Math.PI / 4]}
+                    scale={1.325}
+                />
+            </Select>
             <mesh
                 geometry={nodes['coffeebara-logo-right'].geometry}
                 material={materials['coffeebara-logo-right']}
@@ -36,8 +38,11 @@ export function Coffeebara(props) {
             </Select>
 
             <mesh geometry={nodes.menu.geometry} material={materials.menu} position={[-3.213, 2.163, -2.322]} />
-            <mesh geometry={nodes.table.geometry} material={materials.table} position={[-3.213, 2.391, -2.322]} />
-            <mesh geometry={nodes.sits.geometry} material={materials.sits} position={[-3.213, 2.391, -2.322]} />
+            <Select enabled={true}>
+                <mesh geometry={nodes.table.geometry} material={materials.table} position={[-3.213, 2.391, -2.322]} />
+                <mesh geometry={nodes.sits.geometry} material={materials.sits} position={[-3.213, 2.391, -2.322]} />
+            </Select>
+
             <mesh geometry={nodes['dog-bowl'].geometry} material={materials['dog-bowl']} position={[-3.213, 2.391, -2.322]} />
             <mesh
                 geometry={nodes['windows-and-door'].geometry}
