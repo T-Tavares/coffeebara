@@ -1,0 +1,25 @@
+@import '../../variables.scss';
+
+.infoBallon {
+    height: fit-content;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    p {
+        color: #000;
+    }
+}
+
+.topCornerRight {
+    border-top-right-radius: 0;
+}
+.topCornerLeft {
+    border-top-left-radius: 0;
+}
+.bottomCornerRight {
+    border-bottom-right-radius: 0;
+}
+.bottomCornerLeft {
+    border-bottom-left-radius: 0;
+}
