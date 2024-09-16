@@ -1,6 +1,6 @@
 @import './variables.scss';
 
-.page {
+.layoutContainer {
     background-color: #222;
     width: 100dvw;
     height: 100dvh;
@@ -23,8 +23,10 @@
         color: #fff;
     }
 }
-.modelContainer {
-    height: 70%;
+
+.page {
+    display: flex;
+    align-items: center;
     width: 100%;
-    // border: 1px solid #fff;
+    height: 100%;
 }

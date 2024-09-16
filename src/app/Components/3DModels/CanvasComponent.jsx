@@ -1,6 +1,6 @@
 import {Canvas} from '@react-three/fiber';
-import Coffeebara from './Coffeebara/Coffeebara';
 import {OrbitControls, PerspectiveCamera} from '@react-three/drei';
+import Coffeebara from './Coffeebara/Coffeebara';
 
 const CanvasComponent = ({ballonsController}) => {
     const cameraInitPos = [14, 7, -13];
@@ -15,12 +15,12 @@ const CanvasComponent = ({ballonsController}) => {
             <PerspectiveCamera makeDefault position={cameraInitPos} rotation={cameraInitRot} />
             {/* TODO FINISH CONTROLS LIMITATIONS - PAN LOCK */}
             <OrbitControls
-                minPolarAngle={Math.PI / 3.3}
-                maxPolarAngle={Math.PI / 2.3}
-                minAzimuthAngle={Math.PI / 1.7}
-                maxAzimuthAngle={Math.PI / 1.2}
+                minPolarAngle={Math.PI / 3.2}
+                maxPolarAngle={Math.PI / 2.05}
+                minAzimuthAngle={Math.PI / 2.5}
+                maxAzimuthAngle={Math.PI / 0.9}
                 minDistance={13}
-                maxDistance={25}
+                maxDistance={19.5}
             />
         </Canvas>
     );

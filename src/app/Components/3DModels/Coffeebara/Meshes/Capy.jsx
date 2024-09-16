@@ -12,7 +12,7 @@ const Capy = () => {
                 rotation={[Math.PI / 2, 0, Math.PI / 4]}
                 scale={1.325}
             />
-            <Html position={[4.5, 6.2, -0]} rotation-y={2.5} transform distanceFactor={8}>
+            <Html position={[4.5, 6.2, -0]} rotation-y={2.35} transform distanceFactor={8}>
                 <InfoBallon text="Hi there, I'm Capy" corner={'bottomRight'} />
             </Html>
         </Select>

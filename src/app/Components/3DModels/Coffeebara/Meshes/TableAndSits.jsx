@@ -9,7 +9,7 @@ const TableAndSits = () => {
             <mesh geometry={nodes.table.geometry} material={materials.table} position={[-3.213, 2.391, -2.322]} />
             <mesh geometry={nodes.sits.geometry} material={materials.sits} position={[-3.213, 2.391, -2.322]} />
 
-            <Html position={[4, 0.7, -0]} rotation-y={2.5} transform distanceFactor={8}>
+            <Html position={[3.6, 1, -0.5]} rotation-y={2.35} transform distanceFactor={8}>
                 <InfoBallon text="Click To Reserve a Table" corner={'topLeft'} />
             </Html>
         </Select>

@@ -7,7 +7,7 @@ const Menu = () => {
     return (
         <Select enabled={true}>
             <mesh geometry={nodes.menu.geometry} material={materials.menu} position={[-3.213, 2.163, -2.322]} />
-            <Html position={[3.1, -0.2, -3.6]} rotation-y={2.5} transform distanceFactor={8}>
+            <Html position={[2.8, 0.1, -3.2]} rotation-y={2.35} transform distanceFactor={8}>
                 <InfoBallon text="Click To See Our Menu" corner={'topRight'} />
             </Html>
         </Select>
