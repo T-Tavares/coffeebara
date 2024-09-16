@@ -13,7 +13,7 @@ export const modalOption = {
     RESERVATIONS: 'Reservations',
 };
 
-const CanvasComponent = () => {
+const CanvasComponent = ({setIsLoaded}) => {
     // ---------------------------------------------------------------- //
     // ---------------------- MODAL CONTROLLERS ----------------------- //
     // ---------------------------------------------------------------- //
@@ -47,6 +47,8 @@ const CanvasComponent = () => {
     const cameraInitPos = [14, 7, -13];
     const cameraInitRot = [10, 10, -12];
 
+    // ---------------------------------------------------------------- //
+
     return (
         <>
             {isModal && (
@@ -57,12 +59,10 @@ const CanvasComponent = () => {
                 </Modal>
             )}
             <Canvas>
+                <Coffeebara openModalHandler={openModalHandler} />
                 <directionalLight intensity={0.5} position={[0, 10, 0]} />
                 <ambientLight intensity={2} />
-
-                <Coffeebara openModalHandler={openModalHandler} />
                 <PerspectiveCamera makeDefault position={cameraInitPos} rotation={cameraInitRot} />
-                {/* TODO FINISH CONTROLS LIMITATIONS - PAN LOCK */}
                 <OrbitControls
                     minPolarAngle={Math.PI / 3.2}
                     maxPolarAngle={Math.PI / 2.05}
@@ -70,6 +70,7 @@ const CanvasComponent = () => {
                     maxAzimuthAngle={Math.PI / 0.9}
                     minDistance={13}
                     maxDistance={19.5}
+                    enablePan={false}
                 />
             </Canvas>
         </>

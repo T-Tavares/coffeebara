@@ -1,18 +1,15 @@
-'use client';
-
 import './globals.scss';
 import Socials from './Components/Socials/Socials';
 import ss from './page.module.scss';
-import {ModalsProvider, useModals} from './Contexts/Modals';
-import Gallery from './Components/Gallery/Gallery';
-import {useEffect} from 'react';
+
+export const metadata = {
+    title: 'Coffeebara',
+    description: 'The Friendliest Coffee Around!',
+};
 
 export default function RootLayout({children}) {
-    const {galleryModal, menuModal, reservationModal, closeModal} = useModals();
-    useEffect(() => console.log(galleryModal), [galleryModal, menuModal, reservationModal]);
     return (
         <html lang="en">
-            {/* <ModalsProvider> */}
             <body>
                 <div className={ss.layoutContainer}>
                     <h1>Coffeebara</h1>
@@ -20,9 +17,7 @@ export default function RootLayout({children}) {
                     {children}
                     <Socials />
                 </div>
-                {/* <div id="modals"></div> */}
             </body>
-            {/* </ModalsProvider> */}
         </html>
     );
 }
