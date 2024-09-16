@@ -1,5 +1,5 @@
 import {Canvas} from '@react-three/fiber';
-import Coffeebara from './Coffeebara';
+import Coffeebara from './Coffeebara/Coffeebara';
 import {OrbitControls, PerspectiveCamera} from '@react-three/drei';
 
 const CanvasComponent = ({ballonsController}) => {
