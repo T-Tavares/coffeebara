@@ -8,7 +8,7 @@ import TableAndSits from './Meshes/TableAndSits';
 import Menu from './Meshes/Menu';
 import Capy from './Meshes/Capy';
 
-const Coffeebara = ({ballonsController}) => {
+const Coffeebara = ({openModalHandler}) => {
     const outlineColour = '#04b4ff';
 
     const {nodes, materials} = useGLTF('/coffeebara1.gltf');
@@ -32,9 +32,9 @@ const Coffeebara = ({ballonsController}) => {
 
                 <Select enabled={true}>
                     {/* Elements with HTML and Outline effects applied to them */}
-                    <Capy />
-                    <Menu />
-                    <TableAndSits />
+                    <Capy openModalHandler={openModalHandler} />
+                    <Menu openModalHandler={openModalHandler} />
+                    <TableAndSits openModalHandler={openModalHandler} />
                 </Select>
 
                 <mesh geometry={nodes.building.geometry} material={materials.building} position={[-3.213, 2.391, -2.322]} />

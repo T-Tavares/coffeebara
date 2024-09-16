@@ -1,0 +1,19 @@
+@import '../../variables.scss';
+
+.gallery {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .imageContainer {
+        display: flex;
+        border-radius: 10px;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

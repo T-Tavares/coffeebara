@@ -6,7 +6,7 @@ import ss from './InfoBallon.module.scss';
  * @corner Options: topLeft - topRight - bottomLeft - bottomRight
  * @returns React Three Fiber Ballon Component
  */
-const InfoBallon = ({text, corner}) => {
+const InfoBallon = ({text, corner, onClick}) => {
     const cornerStyle = () => {
         switch (corner) {
             case 'topLeft':
@@ -23,7 +23,7 @@ const InfoBallon = ({text, corner}) => {
     };
 
     return (
-        <div className={`${ss.infoBallon} ${cornerStyle()}`}>
+        <div onClick={onClick} className={`${ss.infoBallon} ${cornerStyle()}`}>
             <p>{text}</p>
         </div>
     );
