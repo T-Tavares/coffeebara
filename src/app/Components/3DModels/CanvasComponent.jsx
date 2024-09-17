@@ -8,6 +8,7 @@ import Coffeebara from './Coffeebara/Coffeebara';
 import Modal from '../Modal/Modal';
 import Gallery from '../Gallery/Gallery';
 import Menu from '../Menu/Menu';
+import Reservations from '../Reservations/Reservations';
 
 export const modalOption = {
     GALLERY: 'Gallery',
@@ -57,7 +58,7 @@ const CanvasComponent = ({setIsLoaded}) => {
                 <Modal title={`Capy ${modalType}`} closeModalHandler={closeModalHandler}>
                     {modalType === modalOption.GALLERY && <Gallery />}
                     {modalType === modalOption.MENU && <Menu />}
-                    {modalType === modalOption.RESERVATIONS && <h1>Reservations</h1>}
+                    {modalType === modalOption.RESERVATIONS && <Reservations />}
                 </Modal>
             )}
             <Canvas>
