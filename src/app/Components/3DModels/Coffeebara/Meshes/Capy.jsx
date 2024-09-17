@@ -3,7 +3,7 @@ import InfoBallon from '@/app/Components/InfoBallon/InfoBallon';
 import {modalOption} from '../../CanvasComponent';
 
 const Capy = ({openModalHandler}) => {
-    const {nodes, materials} = useGLTF('/coffeebara1.gltf');
+    const {nodes, materials} = useGLTF('/coffeebara.gltf');
 
     return (
         <>
@@ -24,5 +24,5 @@ const Capy = ({openModalHandler}) => {
     );
 };
 
-useGLTF.preload('/coffeebara1.gltf');
+useGLTF.preload('/coffeebara.gltf');
 export default Capy;

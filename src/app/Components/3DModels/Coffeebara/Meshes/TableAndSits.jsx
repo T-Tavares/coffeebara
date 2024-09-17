@@ -2,7 +2,7 @@ import {Select, Html, Gltf, useGLTF} from '@react-three/drei';
 import InfoBallon from '@/app/Components/InfoBallon/InfoBallon';
 import {modalOption} from '../../CanvasComponent';
 const TableAndSits = ({openModalHandler}) => {
-    const {nodes, materials} = useGLTF('/coffeebara1.gltf');
+    const {nodes, materials} = useGLTF('/coffeebara.gltf');
 
     return (
         <Select onClick={() => openModalHandler(modalOption.RESERVATIONS)} enabled={true}>
@@ -20,6 +20,6 @@ const TableAndSits = ({openModalHandler}) => {
     );
 };
 
-useGLTF.preload('/coffeebara1.gltf');
+useGLTF.preload('/coffeebara.gltf');
 
 export default TableAndSits;

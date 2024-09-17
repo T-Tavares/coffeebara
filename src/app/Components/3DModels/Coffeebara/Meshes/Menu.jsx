@@ -3,7 +3,7 @@ import InfoBallon from '@/app/Components/InfoBallon/InfoBallon';
 import {modalOption} from '../../CanvasComponent';
 
 const Menu = ({openModalHandler}) => {
-    const {nodes, materials} = useGLTF('/coffeebara1.gltf');
+    const {nodes, materials} = useGLTF('/coffeebara.gltf');
 
     return (
         <Select enabled={true}>
@@ -20,5 +20,5 @@ const Menu = ({openModalHandler}) => {
     );
 };
 
-useGLTF.preload('/coffeebara1.gltf');
+useGLTF.preload('/coffeebara.gltf');
 export default Menu;

@@ -2,10 +2,12 @@
 
 import {Canvas} from '@react-three/fiber';
 import {OrbitControls, PerspectiveCamera} from '@react-three/drei';
+import {useState} from 'react';
+
 import Coffeebara from './Coffeebara/Coffeebara';
 import Modal from '../Modal/Modal';
 import Gallery from '../Gallery/Gallery';
-import {useState} from 'react';
+import Menu from '../Menu/Menu';
 
 export const modalOption = {
     GALLERY: 'Gallery',
@@ -54,7 +56,7 @@ const CanvasComponent = ({setIsLoaded}) => {
             {isModal && (
                 <Modal title={`Capy ${modalType}`} closeModalHandler={closeModalHandler}>
                     {modalType === modalOption.GALLERY && <Gallery />}
-                    {modalType === modalOption.MENU && <h1>Menu</h1>}
+                    {modalType === modalOption.MENU && <Menu />}
                     {modalType === modalOption.RESERVATIONS && <h1>Reservations</h1>}
                 </Modal>
             )}

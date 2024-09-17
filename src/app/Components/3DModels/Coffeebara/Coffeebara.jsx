@@ -6,7 +6,7 @@ import Capy from './Meshes/Capy';
 
 const Coffeebara = ({openModalHandler}) => {
     const outlineColour = '#04b4ff';
-    const {nodes, materials} = useGLTF('/coffeebara1.gltf');
+    const {nodes, materials} = useGLTF('/coffeebara.gltf');
     return (
         <Selection>
             {/* 
@@ -59,5 +59,5 @@ const Coffeebara = ({openModalHandler}) => {
     );
 };
 
-useGLTF.preload('/coffeebara1.gltf');
+useGLTF.preload('/coffeebara.gltf');
 export default Coffeebara;
